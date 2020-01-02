@@ -4,6 +4,7 @@
   "description": "Team Colors is a reference of color values for major league sporting teams.",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d build",
     "dev": "npm run css:build && npm run css:dev & npm run webpack:dev",
     "prod": "npm run css:prod && npm run webpack:prod",
     "prod:static": "node src/scripts/generateStatic.js",
